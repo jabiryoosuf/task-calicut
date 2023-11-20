@@ -1,6 +1,7 @@
 import React from 'react'
 import classes from "./Dashboard.module.css"
 import PaymentCard from '../PaymentCard/PaymentCard'
+import PlanCategory from '../PlanCategory/PlanCategory'
 
 const Dashboard = () => {
   return (
@@ -14,6 +15,9 @@ const Dashboard = () => {
       <PaymentCard heading="Basic" price="9.99/mo" btnColor="#ffe7a9"/>
       <PaymentCard heading="Standard" price="99.99/mo" btnColor="#ffe7a9"/>
       <PaymentCard heading="Premium" price="199.99/mo" btnColor="#ffe7a9"/>
+      </div>
+      <div className={classes.card_container}>
+        <PlanCategory btnColor="#ffe7a9"/>
       </div>
     </div>
   )
