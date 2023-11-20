@@ -42,3 +42,10 @@
   flex-wrap: wrap;
   gap: 4rem;
 }
+.card_category_container{
+  width: 100%;
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}

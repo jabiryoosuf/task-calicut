@@ -6,21 +6,20 @@ import { RiMailLine } from "react-icons/ri";
 import { RiCheckDoubleFill } from "react-icons/ri";
 import classes from "./PlanCategory.module.css";
 
-const PlanCategory = ({ btnColor }) => {
+const PlanCategory = ({ btnColor ,subheading,heading,desc,btntext}) => {
   return (
     <div className={classes.Plancategory}>
       <div className={classes.plan_desc}>
-        <p className={classes.subheading}>Free Forever</p>
-        <h2 className={classes.heading_text}>Free Starter</h2>
+        <p className={classes.subheading} style={{ background: `${btnColor}` }}>{subheading}</p>
+        <h2 className={classes.heading_text}>{heading}</h2>
         <p className={classes.description}>
-          the quickest and easiest way to try protocols with basic
-          functionalities
+         {desc}
         </p>
         <button
           className={classes.getStarted_btn}
           style={{ background: `${btnColor}` }}
         >
-          Get Started{" "}
+          {btntext}{" "}
           <span className={classes.arrow_icon}>
             {" "}
             <CgArrowLongRight />{" "}

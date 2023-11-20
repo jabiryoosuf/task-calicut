@@ -44,7 +44,7 @@ const PaymentCard = ({heading,price,btnColor}) => {
           Email Support
         </li>
       </ul>
-      <p className={classes.explore_text}>Explore Features <span><MdPlayArrow/></span></p>
+      <p className={classes.explore_text}>Explore Features <span><MdPlayArrow style={{color:`${btnColor}`}}/></span></p>
     </div>
   );
 };
